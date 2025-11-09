@@ -194,7 +194,7 @@ fn main() {
     let _ = eframe::run_native(
         "MessagePack <-> JSON Converter",
         options,
-        Box::new(|_cc| Box::new(app)),
+        Box::new(|_cc| Ok(Box::new(app))),
     );
 }
 
